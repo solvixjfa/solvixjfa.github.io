@@ -142,35 +142,24 @@
 
             </article>
 
-            <article id="contact">
-                <h2 class="major">Contact</h2>
-                <p>Tertarik untuk berkolaborasi atau punya pertanyaan? Hubungi kami melalui formulir di bawah atau sosial media.</p>
-                
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <div style="display:none;">
-                        <label>Jangan isi kolom ini jika Anda manusia: <input name="bot-field" /></label>
-                    </div>
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Nama</label>
-                            <input type="text" name="name" id="name" required />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required />
-                        </div>
-                        <div class="field">
-                            <label for="message">Pesan</label>
-                            <textarea name="message" id="message" rows="4" required></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="primary" /></li>
-                        <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                </form>
 
+<article id="contact">
+  <h2 class="major">Contact</h2>
+  <p>Tertarik untuk berkolaborasi atau punya pertanyaan? Kirim pesan melalui formulir di bawah atau hubungi kami di media sosial.</p>
+
+  <form action="https://formspree.io/f/https://formspree.io/f/mldnpnaq" method="POST">
+    <label for="name">Nama</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="message">Pesan</label>
+    <textarea name="message" id="message" rows="4" required></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</article>
                 <ul class="icons">
                  <ul class="icons">
   <li>
