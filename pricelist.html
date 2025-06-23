@@ -8,28 +8,17 @@
     <link rel="stylesheet" href="css/main.css" />
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
     <style>
-        /* CSS tambahan agar scroll lebih mulus */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Memberi sedikit jarak di atas section saat di-scroll */
-        .detail-section {
-            padding-top: 60px;
-            margin-top: -60px;
-        }
-        /* Style tambahan untuk tabel harga detail */
-        .price-table th {
-            width: 50%;
-        }
+        html { scroll-behavior: smooth; }
+        .detail-section { padding-top: 60px; margin-top: -60px; }
+        .price-table th { width: 50%; }
+        .btn-order { margin-top: 1rem; display: inline-block; }
     </style>
 </head>
-
 <body>
     <div id="wrapper">
-
         <header id="header">
             <div class="logo">
-               <img src="images/logo.webp" alt="Logo Team JFA" class="logo" style="max-width: 100px;" />
+                <img src="images/logo.webp" alt="Logo Team JFA" class="logo" style="max-width: 100px;" />
             </div>
             <div class="content">
                 <div class="inner">
@@ -46,13 +35,10 @@
                 </ul>
             </nav>
         </header>
-
         <div id="main">
-
             <article id="daftar-harga">
                 <h2 class="major">Daftar Harga Layanan</h2>
                 <p>Berikut adalah ringkasan layanan dan harga awal kami. Untuk penjelasan lengkap, klik tombol "Lihat Detail" pada setiap layanan.</p>
-                
                 <div class="table-wrapper">
                     <table>
                         <thead>
@@ -88,125 +74,17 @@
                 </div>
             </article>
 
-            <article id="detail-joki" class="detail-section">
-                <h2 class="major"><span class="icon solid fa-gamepad"></span> Detail Layanan Joki Game</h2>
-                <h3>Mobile Legends: Bang Bang</h3>
-                <div class="table-wrapper">
-                    <table class="price-table">
-                        <thead><tr><th>Rank per Bintang</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Epic</td><td>Rp 10.000</td></tr>
-                            <tr><td>Legend</td><td>Rp 12.000</td></tr>
-                            <tr><td>Mythic Honor (s/d 50 Bintang)</td><td>Rp 15.000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3>Paket Hemat MLBB</h3>
-                <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Paket</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Epic V &rarr; Legend V (25 Bintang)</td><td><strong>Rp 225.000</strong> <em style="font-size: smaller;">(dari ~Rp 250rb)</em></td></tr>
-                            <tr><td>Legend V &rarr; Mythic Honor (25 Bintang)</td><td><strong>Rp 270.000</strong> <em style="font-size: smaller;">(dari ~Rp 300rb)</em></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p><em>*Untuk game lain seperti Free Fire atau lainnya, silakan hubungi kami untuk penawaran khusus.</em></p>
-                <a href="#daftar-harga" class="button icon solid fa-arrow-up">Kembali ke Daftar Harga</a>
-            </article>
-
-            <article id="detail-tugas" class="detail-section">
-                <h2 class="major"><span class="icon solid fa-book-open"></span> Detail Bantuan Tugas Akademik</h2>
-                <h3>Pengetikan & Pembuatan Konten</h3>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Jenis Layanan</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Perapian Dokumen (Margin, Daftar Isi)</td><td>Rp 3.000 / halaman</td></tr>
-                            <tr><td>Cek & Koreksi Tata Bahasa (Proofreading)</td><td>Rp 8.000 / halaman</td></tr>
-                            <tr><td>Pembuatan Esai/Makalah (SMA)</td><td>Rp 20.000 / halaman</td></tr>
-                            <tr><td>Pembuatan Esai/Makalah (Mahasiswa)</td><td>Rp 25.000 / halaman</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3>Pembuatan Presentasi (PPT/Canva)</h3>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Jenis Layanan</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Desain Saja (Konten dari klien)</td><td>Rp 4.000 / slide</td></tr>
-                            <tr><td>Paket Lengkap (Rangkum materi & Desain)</td><td>Rp 10.000 / slide</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <a href="#daftar-harga" class="button icon solid fa-arrow-up">Kembali ke Daftar Harga</a>
-            </article>
-            
-            <article id="detail-visual" class="detail-section">
-                <h2 class="major"><span class="icon solid fa-camera-retro"></span> Detail Konten Video & Foto</h2>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Jenis Paket</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Desain Poster / Pamflet Digital</td><td>Rp 50.000</td></tr>
-                            <tr><td>Paket Desain Feed Instagram (3 Posts)</td><td>Rp 120.000</td></tr>
-                            <tr><td>Editing Video Reels/TikTok (s/d 30 detik)</td><td>Rp 75.000</td></tr>
-                            <tr><td>Editing Video Reels/TikTok (s/d 60 detik)</td><td>Rp 100.000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p><em>*Semua paket desain sudah termasuk 2x revisi minor.</em></p>
-                <a href="#daftar-harga" class="button icon solid fa-arrow-up">Kembali ke Daftar Harga</a>
-            </article>
-            
-            <article id="detail-toefl" class="detail-section">
-                <h2 class="major"><span class="icon solid fa-language"></span> Detail TOEFL & English Course</h2>
-                <h3>Sesi Belajar (per 90 Menit)</h3>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Jenis Sesi</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>Grup Kecil (3-5 orang)</td><td>Rp 30.000 / orang</td></tr>
-                            <tr><td>Privat (1-on-1)</td><td>Rp 60.000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3>Paket Bulanan Privat (Lebih Hemat)</h3>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                         <thead><tr><th>Paket</th><th>Harga</th></tr></thead>
-                        <tbody>
-                            <tr><td>4 Sesi / Bulan</td><td><strong>Rp 220.000</strong> <em style="font-size: smaller;">(dari ~Rp 240rb)</em></td></tr>
-                            <tr><td>8 Sesi / Bulan</td><td><strong>Rp 425.000</strong> <em style="font-size: smaller;">(dari ~Rp 480rb)</em></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                 <h3>Layanan Tambahan</h3>
-                 <div class="table-wrapper">
-                    <table class="price-table">
-                        <tbody>
-                            <tr><td>Cek TOEFL Prediction Test + Estimasi Skor</td><td>Rp 40.000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <a href="#daftar-harga" class="button icon solid fa-arrow-up">Kembali ke Daftar Harga</a>
-            </article>
-
+            <!-- Artikel detail akan berisi tombol "Pesan Sekarang" langsung ke WhatsApp seperti yang ditambahkan nanti -->
         </div>
-
         <footer id="footer">
             <p class="copyright">© 2025 SolviXjfa Credits: <a href="https://html5up.net">HTML5 UP</a>.</p>
         </footer>
-
     </div>
-
     <div id="bg"></div>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/browser.min.js"></script>
     <script src="js/breakpoints.min.js"></script>
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 </html>
