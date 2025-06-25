@@ -134,11 +134,24 @@
             <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Dukungan Teknis</li>
           </ul>
           <br>
-          <div class="main-button" onclick="window.location.href='order.html';" style="cursor: pointer;">
-  <a href="order.html">Mulai Diskusi Proyek Anda</a>
+          <!-- Tombol dengan Loading -->
+<div class="main-button" style="cursor: pointer; text-align: center;">
+  <a id="submitButton" href="#">Mulai Diskusi Proyek Anda</a>
 </div>
-</div>
-</div>
+
+<!-- Script Loading dan Redirect -->
+<script>
+  document.getElementById("submitButton").addEventListener("click", function (e) {
+    e.preventDefault(); // Mencegah langsung pindah
+    const button = e.target;
+    button.innerText = "⏳ Mengarahkan...";
+    button.style.pointerEvents = "none"; // Mencegah klik ulang
+
+    setTimeout(() => {
+      window.location.href = "order.html"; // Ubah ke link Google Form jika perlu
+    }, 1200); // Delay 1,2 detik biar terasa smooth
+  });
+</script>
 
 
         
