@@ -9,21 +9,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Judul Halaman Baru -->
     <title>Detail Layanan - Pengembangan Website - SolviXone</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- CSS Paths -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    
-<!-- Google tag (gtag.js) - Kode Analytics Anda -->
+
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MK0Q0R584"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -31,7 +27,7 @@
       gtag('js', new Date());
       gtag('config', 'G-4MK0Q0R584');
     </script>
-    
+
   </head>
 
 <body>
@@ -60,10 +56,9 @@
                         <img src="assets/images/logo.png" alt="SolviXone Logo">
                     </a>
                     <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start (Sudah Diperbarui) ***** -->
+                    <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html">Beranda</a></li>
-                        <!-- Menandai 'Layanan' sebagai induk dari halaman ini -->
                         <li><a href="layanan.html" class="active">Layanan</a></li>
                         <li><a href="tentang-kami.html">Tentang Kami</a></li>
                         <li><a href="order.html">Hubungi Kami</a></li>
@@ -89,7 +84,7 @@
           <span>Beranda > <a href="layanan.html">Layanan</a> > Detail</span>
           <div class="buttons">
             <div class="main-button">
-              <a href="layanan.html">Layanan Lainnya</a>
+              <a href="layanan.html">Jelajahi Layanan Lain</a>
             </div>
             <div class="border-button">
               <a href="order.html">Pesan Layanan Ini</a>
@@ -108,12 +103,11 @@
         <div class="col-lg-12">
           <div class="section-heading">
             <div class="line-dec"></div>
-            <h2>Detail Layanan <em>Pengembangan Website</em>.</h2>
+            <h2>Layanan Unggulan: <em>Pengembangan Website</em></h2>
           </div>
         </div>
         <div class="col-lg-7">
           <div class="left-image">
-            <!-- Ganti gambar ini dengan portofolio layanan Anda -->
             <img src="assets/images/item-details-01.jpg" alt="Contoh Website Profesional" style="border-radius: 20px;">
           </div>
         </div>
@@ -121,34 +115,33 @@
           <h4>Website Profesional untuk Bisnis Anda</h4>
           <span class="author">
             <img src="assets/images/logo.png" alt="Logo SolviXone" style="max-width: 50px; border-radius: 50%;">
-            <h6>SolviXone<br><a href="#">Solusi Digital</a></h6>
+            <!-- PERBAIKAN: Tautan mati '#' diganti -->
+            <h6>SolviXone<br><a href="tentang-kami.html">Solusi Digital Profesional</a></h6>
           </span>
           <p>Kami tidak hanya membuat website, kami membangun gerbang digital untuk bisnis Anda. Setiap website yang kami kembangkan dirancang dengan fokus pada kecepatan, keamanan, dan pengalaman pengguna (User Experience) yang optimal di semua perangkat, dari desktop hingga mobile.</p>
 
-          <h5>Fitur yang Termasuk:</h5>
-          <ul>
-            <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Desain Modern & Responsif</li>
-            <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Optimasi Kecepatan (Fast Loading)</li>
-            <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Ramah SEO (Search Engine Optimization)</li>
-            <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Panel Admin yang Mudah Digunakan</li>
-            <li style="color: #afafaf; margin-bottom: 5px;"><i class="fa fa-check-circle" style="color: #7453ff;"></i> Dukungan Teknis</li>
+          <h5 class="mt-4">Fitur yang Termasuk:</h5>
+          <!-- PERBAIKAN: Struktur daftar lebih rapi -->
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fa fa-check-circle me-2" style="color: #7453ff;"></i> Desain Modern & Responsif</li>
+            <li class="mb-2"><i class="fa fa-check-circle me-2" style="color: #7453ff;"></i> Optimasi Kecepatan (Fast Loading)</li>
+            <li class="mb-2"><i class="fa fa-check-circle me-2" style="color: #7453ff;"></i> Ramah SEO (Search Engine Optimization)</li>
+            <li class="mb-2"><i class="fa fa-check-circle me-2" style="color: #7453ff;"></i> Panel Admin yang Mudah Digunakan</li>
+            <li class="mb-2"><i class="fa fa-check-circle me-2" style="color: #7453ff;"></i> Dukungan Teknis</li>
           </ul>
-          <br>
-          <!-- Tombol dengan Loading -->
-<a class="submitButton" href="#">Mulai Diskusi Proyek Anda</a>
-  
+          
+          <!-- PERBAIKAN: Tombol dengan logika loading disederhanakan -->
+          <div class="main-button mt-4">
+            <a href="order.html" onclick="event.preventDefault(); this.innerText='⏳ Mengarahkan...'; setTimeout(() => {window.location.href=this.href}, 1000);">
+              Mulai Diskusi Proyek Anda
+            </a>
+          </div>
 
-<div>
-<div>
-        
-        <!-- BAGIAN CURRENT BIDDINGS SUDAH DIHAPUS KARENA TIDAK RELEVAN -->
-        
+        </div>
       </div>
     </div>
   </div>
   <!-- ***** Konten Detail Layanan End ***** -->
-  
-  <!-- BAGIAN CREATE NFT JUGA SUDAH DIHAPUS -->
 
   <footer>
     <div class="container">
@@ -164,35 +157,14 @@
 
   <!-- Scripts -->
   <script src="jquery/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Menggunakan bundle yang benar -->
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
-<script src="assets/js/custom.js"></script>
-
-<!-- Script Loading Redirect -->
-<script> ... kode di atas ... </script>
+  <!-- PERBAIKAN: Skrip ganda dan skrip yang salah tempat dihapus -->
 
 </body>
-<!-- Tambahkan di bawah script custom.js -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("submitButton");
-    if (btn) {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        btn.innerText = "⏳ Mengarahkan...";
-        btn.style.pointerEvents = "none";
-        setTimeout(() => {
-          window.location.href = "order.html"; // Ganti ke link Google Form kalau perlu
-        }, 1200);
-      });
-    }
-  });
-</script>
-
-  </body>
 </html>
 
