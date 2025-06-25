@@ -177,6 +177,22 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+<!-- Tambahkan di bawah script custom.js -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("submitButton");
+    if (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        btn.innerText = "⏳ Mengarahkan...";
+        btn.style.pointerEvents = "none";
+        setTimeout(() => {
+          window.location.href = "order.html"; // Ganti ke link Google Form kalau perlu
+        }, 1200);
+      });
+    }
+  });
+</script>
 
   </body>
 </html>
