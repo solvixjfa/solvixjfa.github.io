@@ -104,23 +104,37 @@
         <div class="col-lg-12">
           <div class="row grid">
 
-            <!-- Layanan 1: Pengembangan Website -->
-            <div class="col-lg-6 currently-market-item all">
-              <div class="item">
-                <div class="left-image">
-                  <!-- Path asli dikembalikan -->
-                  <img src="assets/images/market-01.jpg" alt="Pengembangan Website" style="border-radius: 20px; min-width: 195px;">
-                </div>
-                <div class="right-content">
-                  <h4>Pengembangan Website</h4>
-                  <div class="line-dec"></div>
-                  <p>Kami merancang website modern yang cepat, responsif, dan mudah digunakan untuk pengalaman terbaik pengunjung Anda.</p>
-                  <div class="text-button">
-                    <a href="layanan-detail.html">Lihat Detail Layanan</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- Layanan 1: Pengembangan Website (Versi Perbaikan) -->
+<div class="col-lg-6 currently-market-item all">
+  
+  <!-- PERBAIKAN: Menggunakan Flexbox untuk membuat tinggi seragam dan menata konten -->
+  <div class="item" style="display: flex; height: 100%;">
+    
+    <!-- Bagian Gambar -->
+    <div class="left-image" style="flex-shrink: 0;"> <!-- 'flex-shrink: 0' mencegah gambar mengecil -->
+      <img src="assets/images/market-01.jpg" alt="Pengembangan Website" style="border-radius: 20px; width: 195px; height: 100%; object-fit: cover;">
+    </div>
+    
+    <!-- Bagian Konten Teks -->
+    <div class="right-content" style="display: flex; flex-direction: column; padding-left: 25px; width: 100%;">
+      
+      <!-- Konten atas (Judul & Deskripsi) -->
+      <div>
+        <h4>Pengembangan Website</h4>
+        <div class="line-dec"></div>
+        <p>Kami merancang website modern yang cepat, responsif, dan mudah digunakan untuk pengalaman terbaik pengunjung Anda.</p>
+      </div>
+      
+      <!-- Tombol (didorong ke bawah secara otomatis) -->
+      <div class="text-button" style="margin-top: auto;">
+        <a href="layanan-detail.html">Lihat Detail Layanan</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+        
 
             <!-- Layanan 2: Desain Identitas Brand -->
             <div class="col-lg-6 currently-market-item all">
