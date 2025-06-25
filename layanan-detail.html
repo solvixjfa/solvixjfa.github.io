@@ -139,19 +139,12 @@
   <a id="submitButton" href="#">Mulai Diskusi Proyek Anda</a>
 </div>
 
-<!-- Script Loading dan Redirect -->
-<script>
-  document.getElementById("submitButton").addEventListener("click", function (e) {
-    e.preventDefault(); // Mencegah langsung pindah
-    const button = e.target;
-    button.innerText = "⏳ Mengarahkan...";
-    button.style.pointerEvents = "none"; // Mencegah klik ulang
+<div class="main-button" style="cursor: pointer; text-align: center;">
+  <a id="submitButton" href="#">Mulai Diskusi Proyek Anda</a>
+</div>
 
-    setTimeout(() => {
-      window.location.href = "order.html"; // Ubah ke link Google Form jika perlu
-    }, 1200); // Delay 1,2 detik biar terasa smooth
-  });
-</script>
+</div>
+</div>
 
 
         
