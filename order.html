@@ -232,31 +232,25 @@
     });
 
     <!-- ***** Google Form Submission ***** -->
-<form id="gform" ...
-      action="https://docs.google.com/forms/d/e/1FAIpQLSf7zLB54h0P9WHkvpp4itj8FhfyrhM0wZfKxjUsb6tA5BJEaw/formResponse"
-      method="POST"
-      target="hidden_iframe"
-      onsubmit="submitted=true;"
-      class="space-y-6">
-
+<form method="POST" action="https://solvixone1.app.n8n.cloud/webhook/aabed57a-a766-4545-8bf5-77f353e649cf" class="space-y-6">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div>
-      <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Nama Lengkap</label>
-      <input type="text" id="name" name="entry.1862649361" required
+      <label for="nama" class="block mb-2 text-sm font-medium text-gray-300">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required
              class="w-full bg-[#1c1c23] border border-gray-600 rounded-lg p-3 text-white"
              placeholder="Masukkan nama lengkap Anda...">
     </div>
     <div>
-      <label for="contact" class="block mb-2 text-sm font-medium text-gray-300">Nomor WhatsApp / Email</label>
-      <input type="text" id="contact" name="entry.1822576787" required
+      <label for="kontak" class="block mb-2 text-sm font-medium text-gray-300">Nomor WhatsApp / Email</label>
+      <input type="text" id="kontak" name="kontak" required
              class="w-full bg-[#1c1c23] border border-gray-600 rounded-lg p-3 text-white"
              placeholder="Kontak yang bisa dihubungi...">
     </div>
   </div>
 
   <div>
-    <label for="service" class="block mb-2 text-sm font-medium text-gray-300">Pilih Layanan yang Diminati</label>
-    <select id="service" name="entry.1995203457"
+    <label for="layanan" class="block mb-2 text-sm font-medium text-gray-300">Pilih Layanan yang Diminati</label>
+    <select id="layanan" name="layanan"
             class="w-full bg-[#1c1c23] border border-gray-600 rounded-lg p-3 text-white form-select">
       <option value="Pengembangan Website">Pengembangan Website</option>
       <option value="Desain Identitas Brand">Desain Identitas Brand</option>
@@ -267,8 +261,8 @@
   </div>
 
   <div>
-    <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Jelaskan Kebutuhan Anda</label>
-    <textarea id="message" name="entry.1886372659" rows="5"
+    <label for="pesan" class="block mb-2 text-sm font-medium text-gray-300">Jelaskan Kebutuhan Anda</label>
+    <textarea id="pesan" name="pesan" rows="5"
               class="w-full bg-[#1c1c23] border border-gray-600 rounded-lg p-3 text-white"
               placeholder="Tuliskan pesan singkat mengenai proyek atau ide Anda..."></textarea>
   </div>
