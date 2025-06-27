@@ -219,21 +219,29 @@
       icon.classList.toggle('fa-times');
     });
 
-    const form = document.getElementById("gform");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      try {
-        await fetch(form.action, {
-          method: "POST",
-          body: formData
-        });
-        form.style.display = "none";
-        document.getElementById("success-message").classList.remove("hidden");
-      } catch (error) {
-        alert("Gagal mengirim. Silakan coba lagi.");
-      }
+const form = document.getElementById("gform");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = {
+    nama: form.elements["nama"].value,
+    email: form.elements["email"].value,
+    pesan: form.elements["pesan"].value
+  };
+  try {
+    await fetch(form.action, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
     });
-  </script>
+    form.style.display = "none";
+    document.getElementById("success-message").classList.remove("hidden");
+  } catch (error) {
+    alert("Gagal mengirim. Silakan coba lagi.");
+  }
+});
+
+ </script>
 <body>
 </html>
